@@ -341,7 +341,11 @@ to go
   ; reset mean cells per female at the start of each simulated year
   if doy = 1 [
     set year year + 1
-    if year > sim.yrs [ stop ] ; simulation stops when all years defined by the input file have been simulated
+    if year > sim.yrs [
+      print "go: Simulation reached the end, defined by Num.repeat.yr or set by the input file List.input.floral. Click Setup to start a new simulation."
+      set year sim.yrs + 1
+      stop
+    ] ; simulation stops when all years defined by the input file have been simulated
 
     set bees.emerged.yr 0
     set f.emerged.yr 0
@@ -828,7 +832,7 @@ INPUTBOX
 873
 628
 day.emerge.f
-119.0
+105.0
 1
 0
 Number
@@ -850,7 +854,7 @@ INPUTBOX
 872
 865
 max.nesting.life
-32.0
+36.0
 1
 0
 Number
@@ -872,7 +876,7 @@ INPUTBOX
 522
 625
 max.cells
-1.5
+2.0
 1
 0
 Number
@@ -883,7 +887,7 @@ INPUTBOX
 522
 684
 max.f.ratio
-0.51
+0.59
 1
 0
 Number
@@ -894,7 +898,7 @@ INPUTBOX
 689
 628
 max.survival.e.f
-0.868
+0.74
 1
 0
 Number
@@ -993,7 +997,7 @@ INPUTBOX
 685
 255
 Initial.num.f
-50.0
+100.0
 1
 0
 Number
@@ -1004,7 +1008,7 @@ INPUTBOX
 775
 255
 Start.day
-113.0
+1.0
 1
 0
 Number
@@ -1015,7 +1019,7 @@ INPUTBOX
 1028
 628
 dev.egg
-28.0
+8.0
 1
 0
 Number
@@ -1037,7 +1041,7 @@ INPUTBOX
 872
 806
 t.maturation
-5.0
+3.0
 1
 0
 Number
@@ -1048,7 +1052,7 @@ INPUTBOX
 1025
 303
 RndSeed
-573.0
+42.0
 1
 0
 Number
@@ -1059,7 +1063,7 @@ INPUTBOX
 912
 747
 latest.emerge
-270.0
+365.0
 1
 0
 Number
@@ -1198,7 +1202,7 @@ INPUTBOX
 512
 471
 Num.repeat.yr
-20.0
+2.0
 1
 0
 Number
@@ -1272,7 +1276,7 @@ INPUTBOX
 685
 314
 Initial.num.m
-50.0
+200.0
 1
 0
 Number
@@ -1283,7 +1287,7 @@ INPUTBOX
 956
 628
 day.emerge.m
-118.0
+91.0
 1
 0
 Number
@@ -1316,7 +1320,7 @@ INPUTBOX
 785
 628
 max.survival.e.m
-0.868
+0.74
 1
 0
 Number
@@ -1485,6 +1489,84 @@ Voltinism
 Voltinism
 "univoltine" "multivoltine"
 0
+
+BUTTON
+1032
+199
+1136
+232
+O. bicornis
+set Start.day 1\nset Species \"O.bicornis\"\nset Voltinism \"univoltine\"\nset Initial.num.f 100\nset Initial.num.m 200\nset Initial.stage \"cocoon\"\nset Initial.age 200\nset RndSeed 42\nset MultiYearInput FALSE \nset List.input.floral \"NA\"\nset Num.repeat.yr 2\nset input.floral \"Floral_generic_optimal.csv\"\nset stoch.crop.forag FALSE\nset Density.dep FALSE\nset DD.thresh.s 250\nset DD.max.cells.s 2500\nset DD.funct \"linear\"\nset DD.log.slope 2\nset day.emerge.f 105\nset var.emerge.f 3\nset day.emerge.m 91\nset var.emerge.m 2\nset latest.emerge 365\nset dev.egg 8\nset dev.larva 32\nset dev.cocoon 68\nset t.maturation 3\nset m.life 14\nset max.nesting.life 36 \nset p.max.nesting.life 0.04\nset max.f.ratio 0.59\nset max.cells 2\nset max.survival.e.f 0.74\nset max.survival.e.m 0.74\nset emerged.survival 0.544\nset a.cell.age -0.006\nset a.sex.age -0.0406\nset a.size.age -0.003\nset a.cell.resource 0.94\nset a.sex.resource 0.42\nset a.size.resource 0.114\nsetup
+NIL
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
+
+BUTTON
+1032
+232
+1136
+265
+M. rotundata
+set Start.day 1\nset Species \"M.rotundata\"\nset Voltinism \"univoltine\"\nset Initial.num.f 100\nset Initial.num.m 200\nset Initial.stage \"cocoon\"\nset Initial.age 200\nset RndSeed 42\nset MultiYearInput FALSE \nset List.input.floral \"NA\"\nset Num.repeat.yr 2\nset input.floral \"Floral_generic_optimal.csv\"\nset stoch.crop.forag FALSE\nset Density.dep FALSE\nset DD.thresh.s 250\nset DD.max.cells.s 2500\nset DD.funct \"linear\"\nset DD.log.slope 2\nset day.emerge.f 166\nset var.emerge.f 3\nset day.emerge.m 164\nset var.emerge.m 2\nset latest.emerge 185\nset dev.egg 3\nset dev.larva 9\nset dev.cocoon 8\nset t.maturation 7\nset m.life 7\nset max.nesting.life 52 \nset p.max.nesting.life 0.04\nset max.f.ratio 0.83\nset max.cells 2\nset max.survival.e.f 0.65\nset max.survival.e.m 0.65\nset emerged.survival 0.69\nset a.cell.age -0.006\nset a.sex.age -0.0406\nset a.size.age -0.003\nset a.cell.resource 0.94\nset a.sex.resource 0.42\nset a.size.resource 0.114\nsetup
+NIL
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
+
+BUTTON
+1032
+265
+1136
+298
+N. melanderi
+set Start.day 1\nset Species \"N.melanderi\"\nset Voltinism \"univoltine\"\nset Initial.num.f 100\nset Initial.num.m 200\nset Initial.stage \"cocoon\"\nset Initial.age 200\nset RndSeed 42\nset MultiYearInput FALSE \nset List.input.floral \"NA\"\nset Num.repeat.yr 2\nset input.floral \"Floral_generic_optimal.csv\"\nset stoch.crop.forag FALSE\nset Density.dep FALSE\nset DD.thresh.s 250\nset DD.max.cells.s 2500\nset DD.funct \"linear\"\nset DD.log.slope 2\nset day.emerge.f 174\nset var.emerge.f 6\nset day.emerge.m 167\nset var.emerge.m 6\nset latest.emerge 365\nset dev.egg 2\nset dev.larva 6\nset dev.cocoon 20\nset t.maturation 1\nset m.life 14\nset max.nesting.life 26 \nset p.max.nesting.life 0.04\nset max.f.ratio 0.51\nset max.cells 1\nset max.survival.e.f 0.868\nset max.survival.e.m 0.868\nset emerged.survival 0.544\nset a.cell.age -0.006\nset a.sex.age -0.0406\nset a.size.age -0.003\nset a.cell.resource 0.94\nset a.sex.resource 0.42\nset a.size.resource 0.114\nsetup
+NIL
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
+
+BUTTON
+1032
+298
+1136
+331
+E. pruinosa
+set Start.day 1\nset Species \"E.pruinosa\"\nset Voltinism \"univoltine\"\nset Initial.num.f 100\nset Initial.num.m 200\nset Initial.stage \"cocoon\"\nset Initial.age 200\nset RndSeed 42\nset MultiYearInput FALSE \nset List.input.floral \"NA\"\nset Num.repeat.yr 2\nset input.floral \"Floral_generic_optimal.csv\"\nset stoch.crop.forag FALSE\nset Density.dep FALSE\nset DD.thresh.s 250\nset DD.max.cells.s 2500\nset DD.funct \"linear\"\nset DD.log.slope 2\nset day.emerge.f 212\nset var.emerge.f 30\nset day.emerge.m 202\nset var.emerge.m 15\nset latest.emerge 365\nset dev.egg 8\nset dev.larva 15\nset dev.cocoon 68\nset t.maturation 4\nset m.life 14\nset max.nesting.life 36 \nset p.max.nesting.life 0.04\nset max.f.ratio 0.7\nset max.cells 1.65\nset max.survival.e.f 0.74\nset max.survival.e.m 0.74\nset emerged.survival 0.544\nset a.cell.age -0.006\nset a.sex.age -0.0406\nset a.size.age -0.003\nset a.cell.resource 0.94\nset a.sex.resource 0.42\nset a.size.resource 0.114\nsetup
+NIL
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
+
+TEXTBOX
+1035
+166
+1185
+194
+Default setups \nby species\n
+11
+0.0
+1
 
 @#$#@#$#@
 ## SolBeePop: A population model of solitary bees in agricultural landscapes
