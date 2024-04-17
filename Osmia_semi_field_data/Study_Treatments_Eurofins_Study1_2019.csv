@@ -1,0 +1,10 @@
+﻿Study.ID,Study.location,Study.year,Introduction,Last.day,Application.date,Introduction.doy,Last.day.doy,Application.doy,Species,Crop,Females.released,Males.released,Stage.released,Treatment.ID,Compound,Concentration.g.ha
+Study1,NA,2019,4/12/2019,5/18/2019,4/24/2019,102,138,114,O.bicornis,OSR,60,90,Cocoon,Ca,Control,0
+Study1,NA,2019,4/12/2019,5/18/2019,4/24/2019,102,138,114,O.bicornis,OSR,60,90,Cocoon,Cb,Control,0
+Study1,NA,2019,4/12/2019,5/18/2019,4/24/2019,102,138,114,O.bicornis,OSR,60,90,Cocoon,Cc,Control,0
+Study1,NA,2019,4/12/2019,5/18/2019,4/24/2019,102,138,114,O.bicornis,OSR,60,90,Cocoon,Cd,Control,0
+Study1,NA,2019,4/12/2019,5/18/2019,4/24/2019,102,138,114,O.bicornis,OSR,60,90,Cocoon,Ce,Control,0
+Study1,NA,2019,4/12/2019,5/18/2019,4/24/2019,102,138,114,O.bicornis,OSR,60,90,Cocoon,Cf,Control,0
+Study1,NA,2019,4/12/2019,5/18/2019,4/24/2019,102,138,114,O.bicornis,OSR,60,90,Cocoon,Ra,Dimethoate,75
+Study1,NA,2019,4/12/2019,5/18/2019,4/24/2019,102,138,114,O.bicornis,OSR,60,90,Cocoon,Rb,Dimethoate,75
+Study1,NA,2019,4/12/2019,5/18/2019,4/24/2019,102,138,114,O.bicornis,OSR,60,90,Cocoon,Rc,Dimethoate,75

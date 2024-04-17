@@ -1,0 +1,96 @@
+;;; Extension code required by SolBeePop_ecotox.nlogo
+;;; Implementation of GUTS-RED-SD and GUTS-RED-IT for BeeGUTS (Baas et al. 2022)
+
+; GUTS Reduced Stochastic Death (SD) model - the scaled internal concentration is used as the dose metric
+to GUTS_SD [ Cw ] 
+  let Ci C_i   	         ; scaled internal conc [ng/bee] (C_i: SolBeePop_ecotox state variable)
+  ; initialize local variables
+  let dHdt 0.0           ; hazard rate [1/d]
+  let dCi_dt 0.0         ; change in internal concentration per GUTS time step (t.guts)
+   
+  ; calculate derivatives (change per day)
+  set dCi_dt (kd_SD * (Cw - Ci))
+      
+  ; effective change over GUTS timestep 
+  set Ci (Ci + (1 / t.guts) * dCi_dt) 
+     
+  ; to avoid the worst instabilities....
+  if Ci < 0.0 [set Ci 0.0]
+         
+  ; calculate hazard rate based on new Ci value
+  ; dHdt is a rate expressed 1/d. To get the rate 
+  ; in GUTS timestep multiply it by guts_n (time steps per day)
+      
+  let dHdt_n 0
+  if (Ci - mw_SD) > 0 [ set dHdt_n (bw_SD * (Ci - mw_SD)) ]
+  	  set dHdt dHdt + (1 / t.guts) * dHdt_n
+;	]
+	
+ 	let survival_prob e ^ ((-1) * dHdt)
+  if (random-float 1.0 > survival_prob) [ 		
+    set deaths.exp.ad deaths.exp.ad + 1
+    die		
+  ]
+    
+  ; set Ci at the end of the guts time step (t.guts) (C_i: SolBeePop_ecotox state variable)
+  set C_i Ci 
+end
+
+; GUTS Reduced Individual threshold (IT) model 
+to GUTS_IT [ Cw ]   
+  let Ci C_i    	       ; scaled internal conc [ng/bee] (C_i: SolBeePop_ecotox state variable)
+  ; initialize local variables
+  let dHdt 0.0           ; hazard rate [1/d]
+
+	let dCi_dt 0
+	let F_t 0
+	let S_IT 1
+
+  if (Ci >= t.effects_IT) [
+    set deaths.exp.ad deaths.exp.ad + 1
+    die			
+  ]
+		
+ 	set dCi_dt kd_IT * (Cw - Ci)
+		set Ci  Ci + (1 / t.guts) * dCi_dt
+		if (Ci < 0.0) [ set Ci 0.0 ]
+  
+  ; set Ci at the end of the guts time step (t.guts) (C_i: SolBeePop_ecotox state variable)
+  set C_i Ci
+end
+
+; for testing
+to-report intConc_GUTS
+  report mean [C_i] of turtles
+end
+
+to-report GUTS_IT_tresholds
+  ; Procedure calculates the concentration thresholds for GUTS-IT
+  ; A list with 1000 concentrations is calculated, each concentration level corresponds to 0.001 probability of individual threshold
+  ; The list may include some concentrations multiple times, reflecting higher probability of the corresponding internal concentration to be an individual's threshold for death
+  let tList []
+  
+  let prob 0.001
+  let conc 0
+  let i 0
+  set tList lput 0.01 tList 
+  let thresh 0
+  while [ i < 999 ] [
+    while [ (thresh + 0.0000001) < prob ] [ 
+      set thresh (GUTS_IT_threshold_function conc mw_IT Fs_IT)
+      set conc conc + 0.001
+    ]
+    set tList lput (precision conc 2) tList 
+    set prob prob + 0.001
+    set i i + 1
+  ]
+  report tList
+end
+
+to-report GUTS_IT_threshold_function [ c mw Fs ]
+  let term1 c / mw_IT 
+  ifelse (term1 < 0.0001)
+  [ report 0 ]
+  [ report (precision (1 / (1 + (term1 ^ ((-1) * Fs_IT)))) 7) ]
+end
+

@@ -1,0 +1,131 @@
+* ------------------------------------------------------------------------------
+* PEARL REPORT: Header
+* Results from the PEARL model  (c) WENR, PBL and RIVM
+* PEARL kernel version       : 3.2.20
+* SWAP kernel version        : swap3237
+* PEARL created on           : 14-Sep-2020
+* 
+* PEARL was called from      : FOCUSPEARL,version 5.5.5
+* Working directory          : Z:\000 - special\PECsoil_bee_model\SolitaryBees\pforzheim\2_in_field_75\total
+* Run ID                     : ssWOSRpia
+* Input file generated on    : 04-07-2023
+* ------------------------------------------------------------------------------
+* 
+* ExposureType          : Groundwater
+* Scenario data subset  : FOCUS Groundwater version 5
+* Location              : HAMBURG
+* Meteo station         : ..\..\weather\M93106
+* Soil type             : HAMB-S_Soil
+* Crop calendar         : PIAC-WOILSEED
+* Substance             : DiM
+* Application scheme    : bee01
+* Deposition scheme     : No
+* Irrigation scheme     : No
+*
+* End of PEARL REPORT: Header
+* --------------------------------------------------------------------------------
+
+* Key to the annual water balances in the soil system
+* --------------------------------------------------------------------------------
+* DelLiq        Net storage change of water in profile       (m.a-1)
+* Prc           Precipitation                                (m.a-1)
+* Irr           Irrigation                                   (m.a-1)
+* LeaLbo        Seepage at the lower boundary                (m.a-1)
+* LeaGrw        Groundwater recharge                         (m.a-1)
+* LeaTgt        Flux at lower boundary of the target layer   (m.a-1)
+* EvpInt        Evaporation of intercepted water             (m.a-1)
+* SolAct        Actual soil evaporation                      (m.a-1)
+* TrpAct        Actual transpiration                         (m.a-1)
+* Dra           Total discharge to drains and channels       (m.a-1)
+* Dra_1         Lateral discharge to primary system          (m.a-1)
+* Dra_2         Lateral discharge to secondary system        (m.a-1)
+* Dra_3         Lateral discharge to tertiary system         (m.a-1)
+* Dra_4         Lateral discharge to tile drains             (m.a-1)
+* Dra_5         Lateral discharge to surface drainage system (m.a-1)
+* RunOff        Run-off                                      (m.a-1)
+* EvpPnd        Evaporation of ponded water                  (m.a-1)
+* CanDrp        Canopy drip                                  (m.a-1)
+* SolPot        Potential soil evaporation                   (m.a-1)
+* TrpPot        Potential transpiration                      (m.a-1)
+
+* Key to the annual mass balance of substance at the crop
+* --------------------------------------------------------------------------------
+* AmaAppCrp     Areic mass applied to the crop canopy        (kg.ha-1.a-1)
+* DelAmaCrp     Change of areic mass at the crop canopy      (kg.ha-1.a-1)
+* AmaVol        Areic mass volatilised from the crop canopy  (kg.ha-1.a-1)
+* AmaPen        Areic mass penetrated into the plant tissue  (kg.ha-1.a-1)
+* AmaTra        Areic mass transformed at the crop canopy    (kg.ha-1.a-1)
+* AmaDep        Areic mass deposited at the crop canopy      (kg.ha-1.a-1)
+* AmaDsp        Areic mass dissipated at the crop canopy     (kg.ha-1.a-1)
+* AmaWas        Areic mass washed from the cropy canopy      (kg.ha-1.a-1)
+* AmaHar        Areic mass removed by harvesting             (kg.ha-1.a-1)
+
+* Key to the annual mass balance of substance in the soil system
+* --------------------------------------------------------------------------------
+* AmaAppSol     Areic mass applied to the soil system        (kg.ha-1.a-1)
+* DelAma        Change of mass in the soil system            (kg.ha-1.a-1)
+* DelAmaEql     Change of mass in the equilibrium domain     (kg.ha-1.a-1)
+* DelAmaNeq     Change of mass in the non-equilibrium domain (kg.ha-1.a-1)
+* AmaTra        Areic mass transformed in the soil system    (kg.ha-1.a-1)
+* AmaFor        Areic mass formed in the soil system         (kg.ha-1.a-1)
+* AmaUpt        Areic mass taken-up from the soil system     (kg.ha-1.a-1)
+* AmaDra        Areic mass drained from the soil system      (kg.ha-1.a-1)
+* AmaDra_1      Areic mass drained to the primary system     (kg.ha-1.a-1)
+* AmaDra_2      Areic mass drained to the secunary system    (kg.ha-1.a-1)
+* AmaDra_3      Areic mass drained to the tertiary system    (kg.ha-1.a-1)
+* AmaDra_4      Areic mass drained to tube drains            (kg.ha-1.a-1)
+* AmaDra_5      Areic mass drained to surface drain system   (kg.ha-1.a-1)
+* AmaDep        Areic mass deposited at the soil surface     (kg.ha-1.a-1)
+* AmaVol        Areic mass volatized from the soil surface   (kg.ha-1.a-1)
+* AmaLea        Areic mass leached from the soil system      (kg.ha-1.a-1)
+* AmaLeaAqf     Areic mass leached to the deep acquifer      (kg.ha-1.a-1)
+
+* Key to the output per summary period
+* --------------------------------------------------------------------------------
+* AmaLeaTgt     Areic mass leached from the target layer      (kg.ha-1)
+* FlvLeaTgt     Volume of water leached from the target layer (m3.m-2)
+* ConLeaTgt     Concentration in water leached from the target layer (ug.L-1)
+* --------------------------------------------------------------------------------
+
+
+* Annual water balance of the target layer
+* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* yr Identifier        DelLiq      Prc      Irr   LeaLbo   LeaTgt   EvpInt   SolAct   TrpAct      Dra    Dra_1    Dra_2    Dra_3    Dra_4    Dra_5      Run   EvpPnd   CanDrp   SolPot   TrpPot
+2018 BalWatTgt        -0.1169   0.5301   0.0000   0.3230   0.3230   0.0000   0.3235   0.0005   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0024   0.8118   0.0005
+2019 BalWatTgt        -0.0053   0.6987   0.0000   0.1968   0.1968   0.0000   0.3217   0.1854   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.1530   0.5483   0.1893
+2020 BalWatTgt        -0.0454   0.5697   0.0000   0.1737   0.1737   0.0000   0.2587   0.1827   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0897   0.5689   0.2092
+2021 BalWatTgt         0.0395   0.7539   0.0000   0.1782   0.1782   0.0000   0.3646   0.1716   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.1099   0.4783   0.1791
+
+* Annual water balance of the soil profile
+* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* yr Identifier        DelLiq      Prc      Irr   LeaLbo   LeaGrw   EvpInt   SolAct   TrpAct      Dra    Dra_1    Dra_2    Dra_3    Dra_4    Dra_5      Run   EvpPnd   CanDrp   SolPot   TrpPot
+2018 BalWatSol        -0.1169   0.5301   0.0000   0.3230   0.3230   0.0000   0.3235   0.0005   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0024   0.8118   0.0005
+2019 BalWatSol        -0.0053   0.6987   0.0000   0.1968   0.1968   0.0000   0.3217   0.1854   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.1530   0.5483   0.1893
+2020 BalWatSol        -0.0454   0.5697   0.0000   0.1737   0.1737   0.0000   0.2587   0.1827   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0897   0.5689   0.2092
+2021 BalWatSol         0.0395   0.7539   0.0000   0.1782   0.1782   0.0000   0.3646   0.1716   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.1099   0.4783   0.1791
+
+* Annual mass balance of substance at the crop canopy
+* ------------------------------------------------------------------------------------
+* yr Identifier     AmaApp    DelAmaCrp     AmaDep     AmaDsp     AmaWas     AmaHar
+2018 BalCrp_DiM     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000
+2019 BalCrp_DiM     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000
+2020 BalCrp_DiM     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000
+2021 BalCrp_DiM     0.0600     0.0000     0.0000     0.0000     0.0000     0.0600
+
+* Annual mass balance (kg.ha-1) of compound DiM in the target layer
+* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* yr Identifier       AmaAppSol     DelAma  DelAmaEql  DelAmaNeq     AmaTra     AmaFor     AmaUpt     AmaDra   AmaDra_1   AmaDra_2   AmaDra_3   AmaDra_4   AmaDra_5     AmaDep     AmaVol     AmaLea  ConLeaTgt
+2018 BalTgt_DiM   0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000
+2019 BalTgt_DiM   0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000
+2020 BalTgt_DiM   0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000
+2021 BalTgt_DiM  0.1500E-01  0.1352E-08  0.1352E-08   0.000      0.1500E-01   0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000      0.3275E-06  0.1779E-06  0.5745E-10  0.3224E-07
+
+* Annual mass balance (kg.ha-1) of compound DiM in the soil profile
+* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* yr Identifier       AmaAppSol     DelAma  DelAmaEql  DelAmaNeq     AmaTra     AmaFor     AmaUpt     AmaDra   AmaDra_1   AmaDra_2   AmaDra_3   AmaDra_4   AmaDra_5     AmaDep     AmaVol     AmaLea  AmaLeaAqf
+2018 BalSol_DiM   0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000
+2019 BalSol_DiM   0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000
+2020 BalSol_DiM   0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000
+2021 BalSol_DiM  0.1500E-01  0.1352E-08  0.1352E-08   0.000      0.1500E-01   0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000      0.3275E-06  0.1779E-06  0.5745E-10  0.5745E-10
+*
+*  The run time was   0 minutes and 23 seconds

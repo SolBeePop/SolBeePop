@@ -1,0 +1,11 @@
+﻿Study.ID,Study.location,Study.year,Introduction,Last.day,Application.date,Introduction.doy,Last.day.doy,Application.doy,Species,Crop,Females.released,Males.released,Stage.released,Treatment.ID,Compound,Concentration.g.ha
+Study2,NA,2021,4/23/2021,5/26/2021,5/9/2021,113,146,129,O.bicornis,OSR,90,110,Cocoon,Ca,Control,0
+Study2,NA,2021,4/23/2021,5/26/2021,5/9/2021,113,146,129,O.bicornis,OSR,90,110,Cocoon,Cb,Control,0
+Study2,NA,2021,4/23/2021,5/26/2021,5/9/2021,113,146,129,O.bicornis,OSR,90,110,Cocoon,Cc,Control,0
+Study2,NA,2021,4/23/2021,5/26/2021,5/9/2021,113,146,129,O.bicornis,OSR,90,110,Cocoon,Cd,Control,0
+Study2,NA,2021,4/23/2021,5/26/2021,5/9/2021,113,146,129,O.bicornis,OSR,90,110,Cocoon,Ce,Control,0
+Study2,NA,2021,4/23/2021,5/26/2021,5/9/2021,113,146,129,O.bicornis,OSR,90,110,Cocoon,Cf,Control,0
+Study2,NA,2021,4/23/2021,5/26/2021,5/9/2021,113,146,129,O.bicornis,OSR,90,110,Cocoon,Ra,Dimethoate,75
+Study2,NA,2021,4/23/2021,5/26/2021,5/9/2021,113,146,129,O.bicornis,OSR,90,110,Cocoon,Rb,Dimethoate,75
+Study2,NA,2021,4/23/2021,5/26/2021,5/9/2021,113,146,129,O.bicornis,OSR,90,110,Cocoon,Rc,Dimethoate,75
+Study2,NA,2021,4/23/2021,5/26/2021,5/9/2021,113,146,129,O.bicornis,OSR,90,110,Cocoon,Rd,Dimethoate,75
