@@ -1,0 +1,20 @@
+Parameter,Value
+Script_version,Ruddle_field_InputSceB.R
+Date_created,2024-02-09
+Study info file,S14-01571_field_Tables/Study_Treatments_S14-01571_field.csv
+Weather_file1,NA
+Weather_file2,S14-01501_field_Tables/Bruchsal_weather_2014.csv
+OSR_flowering_file,OSR_floral_function/OSR_BBCH_S14_01571_For2014.csv
+Landcover_prop_file,Results_landuse_proportions.csv
+Landcover_factor_file,Landcover_factor_table.csv
+wind.data,FALSE
+min.temp,10
+max.wind,7.2
+max.precip,25.4
+max.humid,100
+use.sunshine,0
+max.forag.hrs,10
+osr.start.doy,92
+study.end,148
+prop.crop,0.73
+foraging.radius,800

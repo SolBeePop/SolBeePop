@@ -1,0 +1,9 @@
+﻿Study.ID,Study.location,Study.year,Introduction.r1,Introduction.r2,Last.day,Introduction.doy.r1,Introduction.doy.r2,Last.day.doy,Species,Crop,Females.released.r1,Males.released.r1,Females.released.r2,Males.released.r2,Stage.released,Treatment.ID,Compound,Concentration.g.ha
+S14-01501,Kraichtal,2014,4/5/2014,4/8/2014,5/20/2014,95,98,140,O.bicornis,OSR,30,60,120,210,Cocoon,Ca,Control,0
+S14-01501,Kraichtal,2014,4/5/2014,4/8/2014,5/20/2014,95,98,140,O.bicornis,OSR,30,60,120,210,Cocoon,Cb,Control,0
+S14-01501,Kraichtal,2014,4/5/2014,4/8/2014,5/20/2014,95,98,140,O.bicornis,OSR,30,60,120,210,Cocoon,Cc,Control,0
+S14-01501,Kraichtal,2014,4/5/2014,4/8/2014,5/20/2014,95,98,140,O.bicornis,OSR,30,60,120,210,Cocoon,Cd,Control,0
+S14-01501,Kraichtal,2014,4/5/2014,4/8/2014,5/20/2014,95,98,140,O.bicornis,OSR,30,60,120,210,Cocoon,Ce,Control,0
+S14-01501,Kraichtal,2014,4/5/2014,4/8/2014,5/20/2014,95,98,140,O.bicornis,OSR,30,60,120,210,Cocoon,Cf,Control,0
+S14-01501,Kraichtal,2014,4/5/2014,4/8/2014,5/20/2014,95,98,140,O.bicornis,OSR,30,60,120,210,Cocoon,Cg,Control,0
+S14-01501,Kraichtal,2014,4/5/2014,4/8/2014,5/20/2014,95,98,140,O.bicornis,OSR,30,60,120,210,Cocoon,Ch,Control,0

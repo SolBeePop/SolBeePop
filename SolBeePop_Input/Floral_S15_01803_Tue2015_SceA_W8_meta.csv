@@ -1,0 +1,18 @@
+Parameter,Value
+Script_version,Ruddle_field_InputSceA.R
+Date_created,2024-03-22
+Study info file,S15-01803_field_Tables/Study_Treatments_S15-01803_field.csv
+Weather_file1,NA
+Weather_file2,S15-01803_field_Tables/Weather_Unterjesingen_2015.csv
+OSR_flowering_file,OSR_floral_function/OSR_BBCH_S15_01803_Tue2015.csv
+wind.data,FALSE
+min.temp,18
+max.wind,7.2
+max.precip,25.4
+max.humid,60
+use.sunshine,0
+max.forag.hrs,10
+osr.start.doy,113
+study.end,149
+nat.Q,0
+prop.crop,1

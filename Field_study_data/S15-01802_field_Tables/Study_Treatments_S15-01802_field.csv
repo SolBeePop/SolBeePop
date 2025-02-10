@@ -1,0 +1,9 @@
+Study.ID,Study.location,Study.year,Introduction,Last.day,Introduction.doy,Last.day.doy,Species,Crop,Females.released,Males.released,Stage.released,Treatment.ID,Compound,Concentration.g.ha
+S15-01802-01,Niefern,2015,4/21/2015,5/27/2015,111,147,o.bicornis,OSR,60,90,Cocoon,Ca,Control,0
+S15-01802-01,Niefern,2015,4/21/2015,5/27/2015,111,147,o.bicornis,OSR,60,90,Cocoon,Cb,Control,0
+S15-01802-01,Niefern,2015,4/21/2015,5/27/2015,111,147,o.bicornis,OSR,60,90,Cocoon,Cc,Control,0
+S15-01802-01,Niefern,2015,4/21/2015,5/27/2015,111,147,o.bicornis,OSR,60,90,Cocoon,Cd,Control,0
+S15-01802-01,Niefern,2015,4/21/2015,5/27/2015,111,147,o.bicornis,OSR,60,90,Cocoon,Ce,Control,0
+S15-01802-01,Niefern,2015,4/21/2015,5/27/2015,111,147,o.bicornis,OSR,60,90,Cocoon,Cf,Control,0
+S15-01802-01,Niefern,2015,4/21/2015,5/27/2015,111,147,o.bicornis,OSR,60,90,Cocoon,Cg,Control,0
+S15-01802-01,Niefern,2015,4/21/2015,5/27/2015,111,147,o.bicornis,OSR,60,90,Cocoon,Ch,Control,0

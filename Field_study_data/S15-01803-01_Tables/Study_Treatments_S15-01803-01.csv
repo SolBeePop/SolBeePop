@@ -1,0 +1,5 @@
+﻿Study.ID,Study.location,Study.year,Introduction,Last.day,Introduction.doy,Last.day.doy,Species,Crop,Females.released,Males.released,Stage.released,Treatment.ID,Compound,Concentration.g.ha
+S15-01803-01,Tuebingen,2015,4/23/2015,5/29/2015,113,149,o.bicornis,OSR,60,90,Cocoon,Csa,Control,0
+S15-01803-01,Tuebingen,2015,4/23/2015,5/29/2015,113,149,o.bicornis,OSR,60,90,Cocoon,Csb,Control,0
+S15-01803-01,Tuebingen,2015,4/23/2015,5/29/2015,113,149,o.bicornis,OSR,60,90,Cocoon,Csc,Control,0
+S15-01803-01,Tuebingen,2015,4/23/2015,5/29/2015,113,149,o.bicornis,OSR,60,90,Cocoon,Csd,Control,0

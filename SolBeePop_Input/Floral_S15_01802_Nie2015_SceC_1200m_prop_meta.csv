@@ -1,0 +1,20 @@
+Parameter,Value
+Script_version,Ruddle_field_InputSceC.R
+Date_created,2024-02-09
+Study info file,S15-01802_field_Tables/Study_Treatments_S15-01802_field.csv
+Weather_file1,NA
+Weather_file2,S15-01802_field_Tables/Weather_Ruddle_et_al_study_2015_Nie.csv
+OSR_flowering_file,OSR_floral_function/OSR_BBCH_S15_01802_Nie2015.csv
+Landcover_prop_file,Results_landuse_proportions.csv
+Landcover_factor_file,Landcover_factor_table.csv
+Pollen_composition_file,Pollen_data.csv
+wind.data,FALSE
+min.temp,10
+max.wind,7.2
+max.precip,25.4
+max.humid,100
+use.sunshine,0
+max.forag.hrs,10
+osr.start.doy,111
+study.end,147
+foraging.radius,1200

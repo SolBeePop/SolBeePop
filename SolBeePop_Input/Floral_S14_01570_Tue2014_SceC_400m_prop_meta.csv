@@ -1,0 +1,20 @@
+Parameter,Value
+Script_version,Ruddle_field_InputSceC.R
+Date_created,2024-02-09
+Study info file,S14-01570_field_Tables/Study_Treatments_S14-01570_field.csv
+Weather_file1,NA
+Weather_file2,S14-01570_field_Tables/Unterjesingen_weather_2014.csv
+OSR_flowering_file,OSR_floral_function/OSR_BBCH_S14_01570_Tue2014.csv
+Landcover_prop_file,Results_landuse_proportions.csv
+Landcover_factor_file,Landcover_factor_table.csv
+Pollen_composition_file,Pollen_data.csv
+wind.data,FALSE
+min.temp,10
+max.wind,7.2
+max.precip,25.4
+max.humid,100
+use.sunshine,0
+max.forag.hrs,10
+osr.start.doy,104
+study.end,156
+foraging.radius,400

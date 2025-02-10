@@ -1,6 +1,6 @@
 # SolBeePop\_ecotox Repository
 
-Last Edited: 16 April 2024
+Last Edited: 6 February 2025
 
 ## Disclaimer
 
@@ -8,7 +8,10 @@ The software and associated files uploaded in this repository were used to gener
 
 Version "SolBeePop": Schmolke, A., Galic, N., & Hinarejos, S. (2023). SolBeePop: A model of solitary bee populations in agricultural landscapes. Journal of Applied Ecology, 60, 2573â€“2585. [https://doi.org/10.1111/1365-2664.14541](https://doi.org/10.1111/1365-2664.14541) 
 
-Version "SolBeePop_ecotox": Schmolke, A., Galic, N., Vanessa Roeben, Thomas G. Preuss, Mark Miles, & Hinarejos, S. SolBeePopecotox: A population model for pesticide risk assessments of solitary bees. Submitted.
+Version "SolBeePop_ecotox": 
+Schmolke, A., Galic, N., Vanessa Roeben, Thomas G. Preuss, Mark Miles, & Hinarejos, S. SolBeePopecotox: A population model for pesticide risk assessments of solitary bees. Environmental Toxicology and Chemistry. 43:2645–2661. [https://doi.org/10.1002/etc.5990]
+
+Schmolke, A., Galic, N., & Hinarejos, S. Landscapes from the bee perspective: an application of SolBeePop to field study data. Submitted.
 
 _This software and associated files are provided "as is" with the sole purpose to allow the reproduction of the published results without any warranties of performance or fitness for any other purpose._
 
@@ -177,3 +180,31 @@ R-scripts:
 - Hypothetical\_Semi\_Field\DIM\_effects\_case\_absolute\_tempsce\_Dec2023.R - plots from simulations with different temporal application scenarios of Nomia, Eucera and Osmia (manuscript figures)
 - Hypothetical\_Semi\_Field\df\_avg\_function.R - function used by previous scripts
 - Hypothetical\_Semi\_Field\DIM\_effects\_case\_relative\_Nov2023.R - plots of relative effect sizes from simulations with Nomia, Eucera and Osmia (TRACE figures)
+
+## Simulation of field study data (version SolBeePop\_ecotox)
+
+Simulation of field studies conducted with _Osmia bicornis_ (Ruddle et al. 2018) without exposures and effects: addressing the representation of complex landscapes with SolBeePop. The following files were used for a model study submitted for publication (Schmolke, A., Galic, N., & Hinarejos, S. Landscapes from the bee perspective: an application of SolBeePop to field study data).
+
+Field\_study\_data:
+- Landcover - images of landcovers around study sites and aggregated landcover data
+- OSR\_floral\_function - BBCH stages of oilseed rape for each field trial and estimated proportional floral resource for model input
+- S14-01501\_field\_Tables - field study data from trial Kraichtal 2014, prepared for comparison with model outputs; the folder includes the weather data
+- S14-01570\_field\_Tables - field study data from trial Tübingen 2014, prepared for comparison with model outputs; the folder includes the weather data
+- S14-01571\_field\_Tables - field study data from trial Fortschwihr 2014, prepared for comparison with model outputs; the folder includes the weather data
+- S15-01802\_field\_Tables - field study data from trial Niefern 2015, prepared for comparison with model outputs; the folder includes the weather data
+- S15-01802-01\_Tables - semi-field study data from trial Niefern 2015, prepared for comparison with model outputs (correspond to data used for and provided in Calibration\_Validation\)
+- S15-01803\_field\_Tables - field study data from trial Tübingen 2015, prepared for comparison with model outputs; the folder includes the weather data
+- S15-01803-01\_Tables - semi-field study data from trial Tübingen 2015, prepared for comparison with model outputs (correspond to data used for and provided in Calibration\_Validation\)
+- S15-01804\_field\_Tables - field study data from trial Celle 2015, prepared for comparison with model outputs; the folder includes the weather data
+- S15-01804-01\_Tables - semi-field study data from trial Celle 2015, prepared for comparison with model outputs (correspond to data used for and provided in Calibration\_Validation\)
+
+Field\_study\_simulations:
+- run\_\*.csv - tables defining setup of simulations for each study trial
+- GOFM\_run\_Ruddle\_field\_\*.csv - calculated goodness-of-fit of simulations compared to field study data for each study trial; weather scenarios analyzed separately
+- all other files in the folder (csv) - simulation outputs for each study trial and scenario
+
+Scripts:
+- run\_netlogo\_field\_sims.R - R-script for the generation of NetLogo BehaviorSpace files (xml) and batch files (bat) required to run multiple simulations from command line
+- Field\_sims\_analysis.R - R-script calculating goodness-of-fit from simulation outputs and field study data
+- Scenario\_generation - R-scripts to generate SolBeePop input files for each scenario (A = low detail, B = medium detail, C = high detail scenario)
+- Manuscript\_figures - R-scripts used to generate manuscript figures
