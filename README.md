@@ -199,6 +199,7 @@ Field\_study\_data:
 - S15-01804-01\_Tables - semi-field study data from trial Celle 2015, prepared for comparison with model outputs (correspond to data used for and provided in Calibration\_Validation\)
 
 Field\_study\_simulations:
+- Plots - manuscript figures and plots of simulations by study site
 - run\_\*.csv - tables defining setup of simulations for each study trial
 - GOFM\_run\_Ruddle\_field\_\*.csv - calculated goodness-of-fit of simulations compared to field study data for each study trial; weather scenarios analyzed separately
 - all other files in the folder (csv) - simulation outputs for each study trial and scenario
